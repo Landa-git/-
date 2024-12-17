@@ -1,0 +1,6 @@
+Программирование;dicts/program.txt
+Финансы;dicts/finans.txt
+Исторический;dicts/history.txt
+Медицинский;dicts/med.txt
+Криптография;dicts/crypto.txt
+Сети;dicts/networks.txt
