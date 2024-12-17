@@ -1,0 +1,706 @@
+[2024-12-12 22:16:18] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:16:18] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dictionaries/config.txt
+[2024-12-12 22:16:18] [main] ERROR com.example.words.DictionaryLoader - Ошибка загрузки словарей
+java.nio.file.NoSuchFileException: dictionaries\config.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
+	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
+	at java.nio.file.Files.newBufferedReader(Files.java:2897) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3392) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3433) ~[?:?]
+	at com.example.words.DictionaryLoader.loadDictionaries(DictionaryLoader.java:27) [classes/:?]
+	at com.example.words.Main.main(Main.java:20) [classes/:?]
+[2024-12-12 22:16:19] [main] ERROR com.example.words.Main - Ошибка при запуске приложения
+java.lang.RuntimeException: Unable to construct Application instance: class com.example.words.TextAnalysisApp
+	at com.sun.javafx.application.LauncherImpl.launchApplication1(LauncherImpl.java:883) ~[javafx-graphics-21-win.jar:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication$2(LauncherImpl.java:196) ~[javafx-graphics-21-win.jar:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NoSuchMethodException: com.example.words.TextAnalysisApp.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3761) ~[?:?]
+	at java.lang.Class.getConstructor(Class.java:2442) ~[?:?]
+	at com.sun.javafx.application.LauncherImpl.lambda$launchApplication1$8(LauncherImpl.java:794) ~[javafx-graphics-21-win.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runAndWait$12(PlatformImpl.java:483) ~[javafx-graphics-21-win.jar:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$10(PlatformImpl.java:456) ~[javafx-graphics-21-win.jar:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:400) ~[?:?]
+	at com.sun.javafx.application.PlatformImpl.lambda$runLater$11(PlatformImpl.java:455) ~[javafx-graphics-21-win.jar:?]
+	at com.sun.glass.ui.InvokeLaterDispatcher$Future.run(InvokeLaterDispatcher.java:95) ~[javafx-graphics-21-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[javafx-graphics-21-win.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$runLoop$3(WinApplication.java:185) ~[javafx-graphics-21-win.jar:?]
+	... 1 more
+[2024-12-12 22:21:24] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:21:24] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:21:24] [main] ERROR com.example.words.DictionaryLoader - Ошибка загрузки словарей
+java.nio.file.NoSuchFileException: dictionaries\history.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
+	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
+	at java.nio.file.Files.newBufferedReader(Files.java:2897) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3392) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3433) ~[?:?]
+	at com.example.words.DictionaryLoader.loadDictionaries(DictionaryLoader.java:34) [classes/:?]
+	at com.example.words.Main.main(Main.java:20) [classes/:?]
+[2024-12-12 22:21:24] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:21:56] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:21:56] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:21:56] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:21:56] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:21:56] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:21:56] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:21:57] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:23:21] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:23:27] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\статья_мед.txt
+[2024-12-12 22:23:29] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:23:29] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:24:10] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:24:18] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\historyraw.txt
+[2024-12-12 22:24:20] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:24:43] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\medraw.txt
+[2024-12-12 22:24:44] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:24:44] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:24:46] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:24:46] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:26:41] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:26:41] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:26:41] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:26:41] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:26:41] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:26:41] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:26:41] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:26:43] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:26:48] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\medraw.txt
+[2024-12-12 22:26:49] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:26:49] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:27:07] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:27:07] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:27:07] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:27:07] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:27:07] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:27:07] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:27:08] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:27:11] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:27:15] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\medraw.txt
+[2024-12-12 22:27:16] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:27:35] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:31:55] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:31:55] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:31:55] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:31:55] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:31:55] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:31:55] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:31:56] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:31:58] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:32:04] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\medraw.txt
+[2024-12-12 22:32:05] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:32:06] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:33:07] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:33:13] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\статья_мед.txt
+[2024-12-12 22:33:14] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:33:14] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:35:53] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:35:53] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:35:53] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:35:55] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:36:05] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\статья_мед.txt
+[2024-12-12 22:36:06] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:36:06] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:36:11] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:36:11] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:36:30] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:36:30] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:36:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:36:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:36:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:36:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:36:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:36:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:36:38] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\статья_мед.txt
+[2024-12-12 22:36:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:36:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:38:30] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:38:30] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:38:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:38:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:38:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:38:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:38:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:38:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:38:43] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\статья_мед.txt
+[2024-12-12 22:38:44] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:38:44] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:39:27] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:39:27] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:39:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:39:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:39:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:39:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:39:27] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:39:29] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:39:35] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\статья_мед.txt
+[2024-12-12 22:39:36] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:39:36] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:43:31] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:43:31] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:43:31] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:43:31] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:43:31] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:43:31] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:43:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:43:33] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:43:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\статья_мед.txt
+[2024-12-12 22:43:41] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:43:44] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:45:55] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:45:55] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:45:55] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:45:55] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:45:55] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:45:55] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:45:55] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:46:33] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:46:33] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:46:33] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:46:33] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:46:33] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:46:33] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:46:34] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:46:35] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:46:44] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\статья_мед.txt
+[2024-12-12 22:46:45] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:46:48] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:48:24] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:48:24] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:48:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:48:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:48:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:48:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:48:25] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:48:26] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:48:39] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-12 22:48:41] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:48:46] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 22:52:08] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 22:52:08] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dict_config.txt
+[2024-12-12 22:52:08] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 22:52:08] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 22:52:08] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 22:52:08] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 22:52:09] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 22:52:11] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 22:52:16] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-12 22:52:17] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 22:52:22] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 23:06:52] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 23:06:52] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:06:53] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 23:06:53] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 23:06:53] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 23:06:53] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 23:06:53] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 23:11:29] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 23:11:29] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:11:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 23:11:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 23:11:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 23:11:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 23:11:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 23:11:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-12 23:11:39] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-12 23:11:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-12 23:11:46] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-12 23:14:25] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 23:16:48] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 23:17:03] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 23:17:27] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 23:18:35] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 23:19:08] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-12 23:19:09] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:19:09] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 23:19:09] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 23:19:09] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 23:19:09] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 23:19:10] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 23:21:13] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:21:14] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 23:21:14] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 23:21:14] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 23:21:14] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 23:21:14] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 23:22:29] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:22:29] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 23:22:29] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 23:22:29] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 23:22:29] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 23:22:29] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 23:22:44] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:22:45] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 23:22:45] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 23:22:45] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 23:22:45] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 23:22:45] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 23:23:51] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:23:51] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 23:23:51] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 23:23:51] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 23:23:51] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 23:23:51] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 23:25:10] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:25:10] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 23:25:10] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 23:25:10] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 23:25:10] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 23:25:11] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 23:35:43] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:44:22] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:53:21] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:53:21] [main] ERROR com.example.words.DictionaryLoader - Ошибка загрузки словарей
+java.lang.IndexOutOfBoundsException: Index: 0
+	at java.util.Collections$EmptyList.get(Collections.java:4807) ~[?:?]
+	at com.example.words.DictionaryLoader.generateAgreedCombinations(DictionaryLoader.java:104) ~[classes/:?]
+	at com.example.words.DictionaryLoader.generateWordForms(DictionaryLoader.java:75) ~[classes/:?]
+	at com.example.words.DictionaryLoader.loadDictionaries(DictionaryLoader.java:47) [classes/:?]
+	at com.example.words.Main.main(Main.java:40) [classes/:?]
+[2024-12-12 23:53:21] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-12 23:59:56] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-12 23:59:56] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-12 23:59:56] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-12 23:59:56] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-12 23:59:56] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-12 23:59:57] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 00:00:03] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-13 00:00:17] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-13 00:00:18] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-13 00:00:43] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-13 00:02:12] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:02:12] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-13 00:02:12] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-13 00:02:12] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-13 00:02:12] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-13 00:02:12] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:02:13] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 00:02:18] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-13 00:02:27] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-13 00:02:28] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-13 00:06:32] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:14:33] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:14:38] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:20:07] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:20:10] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:25:29] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:31:51] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:32:13] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:32:14] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 00:32:58] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:33:03] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:34:37] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:35:36] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:38:40] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:40:38] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:40:43] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:42:43] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:42:47] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:43:26] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:43:51] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:43:52] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-13 00:43:52] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-13 00:43:52] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-13 00:43:52] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-13 00:43:52] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:43:53] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 00:44:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-13 00:44:08] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-13 00:44:10] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-13 00:44:58] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-13 00:45:34] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:45:34] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: История
+[2024-12-13 00:45:35] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-13 00:45:35] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицина
+[2024-12-13 00:45:35] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-13 00:45:35] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:45:35] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 00:45:49] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:45:49] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:45:50] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 00:45:52] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-13 00:46:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-13 00:46:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-13 00:46:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-13 00:47:05] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:47:11] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:47:13] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 00:47:15] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-13 00:47:22] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-13 00:47:23] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-13 00:48:34] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-13 00:49:52] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 00:49:52] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 00:49:52] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 00:49:54] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-13 00:50:02] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-13 00:50:04] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-13 00:50:04] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-13 01:02:08] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: C:\Users\lita0\AppData\Local\Temp\junit6461135292621321221\config.txt
+[2024-12-13 01:02:10] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Тестовый словарь
+[2024-12-13 01:03:37] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: C:\Users\lita0\AppData\Local\Temp\junit1328977525515116881\config.txt
+[2024-12-13 01:03:39] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Тестовый словарь
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь 1
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь 1' завершён. Общий счёт: 2
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь 2
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь 2' завершён. Общий счёт: 2
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Тестовый словарь
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Тестовый словарь' завершён. Общий счёт: 2
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь' завершён. Общий счёт: 4
+[2024-12-13 01:19:06] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь 1
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь 1' завершён. Общий счёт: 2
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь 2
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь 2' завершён. Общий счёт: 2
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Тестовый словарь
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Тестовый словарь' завершён. Общий счёт: 2
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь' завершён. Общий счёт: 4
+[2024-12-13 01:31:32] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 01:32:51] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 01:32:51] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь
+[2024-12-13 01:32:51] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь' завершён. Общий счёт: 2
+[2024-12-13 01:32:51] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 02:04:45] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-13 02:04:45] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 02:04:47] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 02:04:48] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 02:05:44] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-13 02:05:44] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 02:05:46] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 02:05:47] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 02:22:14] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-13 02:22:14] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 02:24:26] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 02:24:27] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 02:24:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-13 02:24:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-13 02:24:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-13 02:24:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 02:24:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Программирование
+[2024-12-13 02:24:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Программирование' завершён. Общий счёт: 2
+[2024-12-13 02:24:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 02:24:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-13 02:31:09] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: C:\Users\lita0\AppData\Local\Temp\junit6218092943510232251\config.txt
+[2024-12-13 02:31:11] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Тестовый словарь
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь 1
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь 1' завершён. Общий счёт: 2
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь 2
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь 2' завершён. Общий счёт: 2
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Тестовый словарь
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Тестовый словарь' завершён. Общий счёт: 2
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Словарь
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Словарь 'Словарь' завершён. Общий счёт: 2
+[2024-12-13 02:31:28] [main] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 13:55:48] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-13 13:55:48] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-13 13:55:51] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-13 13:55:52] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-13 13:55:55] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-13 13:56:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Desktop\словари\статья_мед.txt
+[2024-12-13 13:56:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-13 13:56:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-13 13:56:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Программирование
+[2024-12-13 13:56:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Программирование' завершён. Общий счёт: 2
+[2024-12-13 13:56:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-13 13:56:01] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-15 17:41:09] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-15 17:41:09] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-15 17:41:11] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-15 17:41:12] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-15 17:41:22] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-15 17:41:36] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Downloads\summary1.docx
+[2024-12-15 17:41:39] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-15 17:41:39] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-15 17:41:39] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Программирование
+[2024-12-15 17:41:39] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Программирование' завершён. Общий счёт: 0
+[2024-12-15 17:41:39] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-15 17:41:39] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-15 17:42:20] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-15 17:42:20] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-15 17:42:22] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-15 17:42:22] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-15 17:42:27] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-15 17:42:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\lita0\Downloads\sum4.docx
+[2024-12-15 17:42:33] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-15 17:42:33] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-15 17:42:33] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Программирование
+[2024-12-15 17:42:33] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Программирование' завершён. Общий счёт: 0
+[2024-12-15 17:42:33] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-15 17:42:33] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-16 01:48:29] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-16 01:48:29] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-16 01:48:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-16 01:48:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-16 01:48:39] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-16 01:48:44] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\CYBER ARTEL\Desktop\М.txt
+[2024-12-16 01:48:45] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-16 01:48:45] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-16 01:48:45] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Программирование
+[2024-12-16 01:48:45] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Программирование' завершён. Общий счёт: 0
+[2024-12-16 01:48:45] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-16 01:48:45] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-16 11:40:15] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-16 11:40:15] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-16 11:40:16] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-16 11:40:17] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-16 22:26:24] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-16 22:26:24] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-16 22:26:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-16 22:26:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-16 22:26:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Исторический
+[2024-12-16 22:26:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицинский
+[2024-12-16 22:26:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-16 22:26:25] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Сети
+[2024-12-16 22:26:26] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-16 22:26:27] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-16 22:26:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\CYBER ARTEL\Desktop\Сети.txt
+[2024-12-16 22:26:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-16 22:26:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-16 22:26:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Программирование
+[2024-12-16 22:26:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Программирование' завершён. Общий счёт: 1
+[2024-12-16 22:26:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Финансы
+[2024-12-16 22:26:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Финансы' завершён. Общий счёт: 0
+[2024-12-16 22:26:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Исторический
+[2024-12-16 22:26:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Исторический' завершён. Общий счёт: 0
+[2024-12-16 22:26:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Медицинский
+[2024-12-16 22:26:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Медицинский' завершён. Общий счёт: 0
+[2024-12-16 22:26:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Криптография
+[2024-12-16 22:26:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Криптография' завершён. Общий счёт: 3
+[2024-12-16 22:26:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Сети
+[2024-12-16 22:26:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Сети' завершён. Общий счёт: 16
+[2024-12-16 22:26:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-16 22:26:32] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-16 23:21:29] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-16 23:21:29] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-16 23:21:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-16 23:21:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-16 23:21:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Исторический
+[2024-12-16 23:21:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицинский
+[2024-12-16 23:21:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-16 23:21:30] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Сети
+[2024-12-16 23:21:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-16 23:21:43] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-16 23:21:43] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-16 23:21:44] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-16 23:21:44] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-16 23:21:44] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Исторический
+[2024-12-16 23:21:44] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицинский
+[2024-12-16 23:21:44] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-16 23:21:44] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Сети
+[2024-12-16 23:21:45] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 09:50:31] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 09:50:31] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 09:50:31] [main] ERROR com.example.words.DictionaryLoader - Ошибка загрузки словарей
+java.nio.file.NoSuchFileException: dicts\dict_config.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
+	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
+	at java.nio.file.Files.newBufferedReader(Files.java:2897) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3392) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3433) ~[?:?]
+	at com.example.words.DictionaryLoader.loadDictionaries(DictionaryLoader.java:44) [words-1.0-SNAPSHOT-all.jar:?]
+	at com.example.words.Main.main(Main.java:22) [words-1.0-SNAPSHOT-all.jar:?]
+[2024-12-17 09:50:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 09:52:14] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 09:52:14] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 09:52:14] [main] ERROR com.example.words.DictionaryLoader - Ошибка загрузки словарей
+java.nio.file.NoSuchFileException: dicts\dict_config.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
+	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
+	at java.nio.file.Files.newBufferedReader(Files.java:2897) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3392) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3433) ~[?:?]
+	at com.example.words.DictionaryLoader.loadDictionaries(DictionaryLoader.java:44) [words-1.0-SNAPSHOT-all.jar:?]
+	at com.example.words.Main.main(Main.java:22) [words-1.0-SNAPSHOT-all.jar:?]
+[2024-12-17 09:52:14] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 09:54:16] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 09:54:16] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 09:54:16] [main] ERROR com.example.words.DictionaryLoader - Ошибка загрузки словарей
+java.nio.file.NoSuchFileException: dicts\dict_config.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
+	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
+	at java.nio.file.Files.newBufferedReader(Files.java:2897) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3392) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3433) ~[?:?]
+	at com.example.words.DictionaryLoader.loadDictionaries(DictionaryLoader.java:44) [words-1.0-SNAPSHOT-all.jar:?]
+	at com.example.words.Main.main(Main.java:22) [words-1.0-SNAPSHOT-all.jar:?]
+[2024-12-17 09:54:16] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 09:58:38] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 09:58:38] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 09:58:40] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-17 09:58:40] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-17 09:58:40] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Исторический
+[2024-12-17 09:58:40] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицинский
+[2024-12-17 09:58:40] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-17 09:58:40] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Сети
+[2024-12-17 09:58:40] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 09:58:42] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-17 10:07:56] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 10:07:56] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 10:07:57] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-17 10:07:58] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-17 10:07:58] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Исторический
+[2024-12-17 10:07:58] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицинский
+[2024-12-17 10:07:58] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-17 10:07:58] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Сети
+[2024-12-17 10:07:58] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 10:22:00] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 10:22:00] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 10:22:00] [main] ERROR com.example.words.DictionaryLoader - Ошибка загрузки словарей
+java.nio.file.NoSuchFileException: dicts\dict_config.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
+	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
+	at java.nio.file.Files.newBufferedReader(Files.java:2897) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3392) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3433) ~[?:?]
+	at com.example.words.DictionaryLoader.loadDictionaries(DictionaryLoader.java:44) [words-1.0-SNAPSHOT-all.jar:?]
+	at com.example.words.Main.main(Main.java:22) [words-1.0-SNAPSHOT-all.jar:?]
+[2024-12-17 10:22:00] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 10:22:48] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 10:22:48] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 10:22:48] [main] ERROR com.example.words.DictionaryLoader - Ошибка загрузки словарей
+java.nio.file.NoSuchFileException: dicts\dict_config.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
+	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
+	at java.nio.file.Files.newBufferedReader(Files.java:2897) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3392) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3433) ~[?:?]
+	at com.example.words.DictionaryLoader.loadDictionaries(DictionaryLoader.java:44) [words-1.0-SNAPSHOT-all.jar:?]
+	at com.example.words.Main.main(Main.java:22) [words-1.0-SNAPSHOT-all.jar:?]
+[2024-12-17 10:22:49] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 10:22:59] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-17 10:23:03] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\CYBER ARTEL\Desktop\Сети.txt
+[2024-12-17 10:23:04] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-17 10:23:04] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-17 10:23:04] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-17 10:23:04] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
+[2024-12-17 10:31:18] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 10:31:18] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 10:31:19] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-17 10:31:19] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-17 10:31:19] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Исторический
+[2024-12-17 10:31:19] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицинский
+[2024-12-17 10:31:19] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-17 10:31:19] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Сети
+[2024-12-17 10:31:19] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 10:33:36] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 10:33:36] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 10:33:37] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-17 10:33:37] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-17 10:33:37] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Исторический
+[2024-12-17 10:33:37] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицинский
+[2024-12-17 10:33:37] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-17 10:33:37] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Сети
+[2024-12-17 10:33:37] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 10:34:31] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 10:34:31] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 10:34:31] [main] ERROR com.example.words.DictionaryLoader - Ошибка загрузки словарей
+java.nio.file.NoSuchFileException: dicts\dict_config.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
+	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
+	at java.nio.file.Files.newBufferedReader(Files.java:2897) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3392) ~[?:?]
+	at java.nio.file.Files.readAllLines(Files.java:3433) ~[?:?]
+	at com.example.words.DictionaryLoader.loadDictionaries(DictionaryLoader.java:44) [words-1.0-SNAPSHOT-all.jar:?]
+	at com.example.words.Main.main(Main.java:22) [words-1.0-SNAPSHOT-all.jar:?]
+[2024-12-17 10:34:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 10:37:25] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 10:37:25] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 10:37:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-17 10:37:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-17 10:37:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Исторический
+[2024-12-17 10:37:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицинский
+[2024-12-17 10:37:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-17 10:37:27] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Сети
+[2024-12-17 10:37:27] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 18:29:15] [main] INFO  com.example.words.Main - Запуск приложения
+[2024-12-17 18:29:15] [main] INFO  com.example.words.DictionaryLoader - Загрузка словарей из конфигурационного файла: dicts/dict_config.txt
+[2024-12-17 18:29:16] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Программирование
+[2024-12-17 18:29:16] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Финансы
+[2024-12-17 18:29:16] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Исторический
+[2024-12-17 18:29:16] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Медицинский
+[2024-12-17 18:29:16] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Криптография
+[2024-12-17 18:29:16] [main] INFO  com.example.words.DictionaryLoader - Загружен словарь: Сети
+[2024-12-17 18:29:17] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Инициализация интерфейса
+[2024-12-17 18:29:20] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбор текстового файла
+[2024-12-17 18:29:29] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Выбран файл: C:\Users\CYBER ARTEL\Desktop\М.txt
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Начало анализа текста
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Начало анализа текста
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Программирование
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Программирование' завершён. Общий счёт: 0
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Финансы
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Финансы' завершён. Общий счёт: 3
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Исторический
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Исторический' завершён. Общий счёт: 0
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Медицинский
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Медицинский' завершён. Общий счёт: 20
+[2024-12-17 18:29:30] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Криптография
+[2024-12-17 18:29:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Криптография' завершён. Общий счёт: 0
+[2024-12-17 18:29:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста с использованием словаря: Сети
+[2024-12-17 18:29:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Словарь 'Сети' завершён. Общий счёт: 0
+[2024-12-17 18:29:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalyzer - Анализ текста завершён
+[2024-12-17 18:29:31] [JavaFX Application Thread] INFO  com.example.words.TextAnalysisApp - Анализ завершён успешно
